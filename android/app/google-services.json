@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "922255655791",
+    "project_id": "new-life-medicare",
+    "storage_bucket": "new-life-medicare.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:922255655791:android:8421587ae39ec7a23a9e9a",
+        "android_client_info": {
+          "package_name": "com.example.newlife_medicare"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCbigKyEVBeR3yfxee9M3EhCjOoP8-UDZk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
