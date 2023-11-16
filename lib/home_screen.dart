@@ -1,5 +1,6 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
+import 'package:newlife_medicare/doctor/util/color_const.dart';
 import 'package:newlife_medicare/routes.dart';
 
 class HomeScreen extends StatefulWidget {
@@ -17,7 +18,10 @@ class _HomeScreenState extends State<HomeScreen> {
         appBar: AppBar(
           title: Row(
             children: [
-              const Text('Home Screen',style: TextStyle(color: Colors.white),),
+              const Text(
+                'Home Screen',
+                style: TextStyle(color: Colors.white),
+              ),
               const Spacer(),
               IconButton(
                 onPressed: () async {
@@ -26,11 +30,14 @@ class _HomeScreenState extends State<HomeScreen> {
                     Navigator.pop(context);
                   }
                 },
-                icon: const Icon(Icons.logout,color: Colors.white,),
+                icon: const Icon(
+                  Icons.logout,
+                  color: ColorsConst.whiteColor,
+                ),
               )
             ],
           ),
-          backgroundColor: Colors.purple,
+          backgroundColor: ColorsConst.purpleColor,
           automaticallyImplyLeading: false,
         ),
         body: Padding(
@@ -42,7 +49,7 @@ class _HomeScreenState extends State<HomeScreen> {
                   width: MediaQuery.of(context).size.width,
                   child: ElevatedButton(
                     onPressed: () {
-                      Navigator.pushNamed(context,RouteConst.addPatient);
+                      Navigator.pushNamed(context, RouteConst.addPatient);
                     },
                     child: const Text('Add Patient'),
                   ),
